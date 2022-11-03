@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v2.1.0">
 <title data-rh="true">Problem 6 | Test</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://priolo.github.io//temp/docs/prob-6"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Problem 6 | Test"><meta data-rh="true" name="description" content="Localizzation"><meta data-rh="true" property="og:description" content="Localizzation"><link data-rh="true" rel="icon" href="/temp/img/logo.svg"><link data-rh="true" rel="canonical" href="https://priolo.github.io//temp/docs/prob-6"><link data-rh="true" rel="alternate" href="https://priolo.github.io//temp/docs/prob-6" hreflang="en"><link data-rh="true" rel="alternate" href="https://priolo.github.io//temp/docs/prob-6" hreflang="x-default"><link rel="stylesheet" href="/temp/assets/css/styles.5f8cf131.css">
-<link rel="preload" href="/temp/assets/js/runtime~main.ff949f41.js" as="script">
+<link rel="preload" href="/temp/assets/js/runtime~main.7ad53baa.js" as="script">
 <link rel="preload" href="/temp/assets/js/main.7093e84c.js" as="script">
 </head>
 <body class="navigation-with-keyboard">
@@ -17,20 +17,20 @@
 <!-- -->the <code>error-code</code> is easily translated and can be collected in an array.<br>
 <a href="https://codesandbox.io/s/prob-6-7rtgro?file=/src/hooks/validator.js:866-907" target="_blank" rel="noopener noreferrer">code</a></p><p>The check is done on the exchange of the <code>value</code>.<br>
 <!-- -->The <code>value</code> is any value that the INPUT component handles<br>
-<!-- -->The <code>value</code> is evaluated with an ARRAY of<code> rules</code> and then any <code>error-code</code> is collected<br>
+<!-- -->The <code>value</code> is evaluated with an ARRAY of <code>rules</code> and then any <code>error-code</code> created is collected<br>
 <a href="https://codesandbox.io/s/prob-6-7rtgro?file=/src/hooks/validator.js:1996-2136" target="_blank" rel="noopener noreferrer">code</a></p><p>The <code>rules</code> are simple LAMBDAs that take a value and determine if this value is valid.
 <a href="https://codesandbox.io/s/prob-6-7rtgro?file=/src/hooks/rules.js" target="_blank" rel="noopener noreferrer">code</a></p><p>It is also possible to insert a specific <code>rule</code>
 <a href="https://codesandbox.io/s/prob-6-7rtgro?file=/src/components/PhoneField.jsx:1002-1233" target="_blank" rel="noopener noreferrer">code</a></p><p>An important requirement is to be able to validate (or reset) all COMPONENTs externally to the VIEW.<br>
 <!-- -->This happens for example BEFORE sending the data to the BE.<br>
 <!-- -->To do this the hook <a href="https://codesandbox.io/s/prob-6-7rtgro?file=/src/hooks/validator.js:1270-1710" target="_blank" rel="noopener noreferrer">registers</a> the <code>Listeners</code> and therefore can use<code> validateAll</code><br>
-<a href="https://codesandbox.io/s/prob-6-7rtgro?file=/src/hooks/validator.js:228-541" target="_blank" rel="noopener noreferrer">code</a></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="view-state-decoupling">VIEW-STATE decoupling<a class="hash-link" href="#view-state-decoupling" title="Direct link to heading">​</a></h2><p>I have repeated this to myself many times<br>
+<a href="https://codesandbox.io/s/prob-6-7rtgro?file=/src/hooks/validator.js:228-541" target="_blank" rel="noopener noreferrer">code</a></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="view-state-decoupling">VIEW-STATE decoupling<a class="hash-link" href="#view-state-decoupling" title="Direct link to heading">​</a></h2><p>As I have written several times already<br>
 <!-- -->But just for the FORM it is useful to decouple the VIEW and the STATE.<br>
-<!-- -->The alternative is to pass the getter / setter from the FORM to each FIELD.<br>
+<!-- -->The alternative is to pass the <code>getter/setter</code> from the FORM to each FIELD.<br>
 <!-- -->This should be repeated for each branch. For example, CARDs that group more FIELDs.<br>
 <!-- -->So here too I used the STOREs<br>
 <a href="https://codesandbox.io/s/prob-6-7rtgro?file=/src/stores/user.js" target="_blank" rel="noopener noreferrer">code</a></p><blockquote><p>Note: FORM and FOOTER components are independent
 and you can put them anywhere in the rendering tree with a simple copy&amp;paste.</p></blockquote></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/temp/docs/prob-5"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Problem 5</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/temp/docs/prob-7"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Problem 7</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#localizzation" class="table-of-contents__link toc-highlight">Localizzation</a></li><li><a href="#validation" class="table-of-contents__link toc-highlight">Validation</a></li><li><a href="#view-state-decoupling" class="table-of-contents__link toc-highlight">VIEW-STATE decoupling</a></li></ul></div></div></div></div></main></div></div><footer class="footer"><div class="container container-fluid"></div></footer></div>
-<script src="/temp/assets/js/runtime~main.ff949f41.js"></script>
+<script src="/temp/assets/js/runtime~main.7ad53baa.js"></script>
 <script src="/temp/assets/js/main.7093e84c.js"></script>
 </body>
 </html>
